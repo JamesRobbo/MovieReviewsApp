@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mVJ-uk-3eq" customClass="CriticsCollectionViewCell" customModule="UseVerbApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="157" height="179"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="leh-fZ-doI">
+                <rect key="frame" x="0.0" y="0.0" width="157" height="179"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Psh-VR-NZp">
+                        <rect key="frame" x="10" y="5" width="137" height="143"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3L-xq-U3P">
+                        <rect key="frame" x="10" y="153" width="137" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="EyT-bw-6X5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="I3L-xq-U3P" firstAttribute="leading" secondItem="leh-fZ-doI" secondAttribute="leading" constant="10" id="BSr-NS-ktz"/>
+                    <constraint firstItem="Psh-VR-NZp" firstAttribute="top" secondItem="leh-fZ-doI" secondAttribute="top" constant="5" id="D4h-b3-bOI"/>
+                    <constraint firstItem="Psh-VR-NZp" firstAttribute="leading" secondItem="leh-fZ-doI" secondAttribute="leading" constant="10" id="UiZ-b0-n8T"/>
+                    <constraint firstAttribute="trailing" secondItem="I3L-xq-U3P" secondAttribute="trailing" constant="10" id="VAY-FH-Cya"/>
+                    <constraint firstAttribute="bottom" secondItem="I3L-xq-U3P" secondAttribute="bottom" constant="5" id="W6Z-aX-D5f"/>
+                    <constraint firstItem="I3L-xq-U3P" firstAttribute="centerX" secondItem="leh-fZ-doI" secondAttribute="centerX" id="a9X-6z-hAt"/>
+                    <constraint firstItem="I3L-xq-U3P" firstAttribute="top" secondItem="Psh-VR-NZp" secondAttribute="bottom" constant="5" id="cZW-N3-hpP"/>
+                    <constraint firstItem="Psh-VR-NZp" firstAttribute="centerX" secondItem="leh-fZ-doI" secondAttribute="centerX" id="eTz-EE-2w8"/>
+                    <constraint firstAttribute="trailing" secondItem="Psh-VR-NZp" secondAttribute="trailing" constant="10" id="zGC-A5-6O4"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="157" height="179"/>
+            <connections>
+                <outlet property="imageView" destination="Psh-VR-NZp" id="TBk-QG-545"/>
+                <outlet property="nameLabel" destination="I3L-xq-U3P" id="RbA-nx-bXr"/>
+            </connections>
+            <point key="canvasLocation" x="162.59541984732823" y="72.887323943661968"/>
+        </collectionViewCell>
+    </objects>
+</document>
